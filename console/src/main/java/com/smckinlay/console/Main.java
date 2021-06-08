@@ -1,9 +1,6 @@
 package com.smckinlay.console;
 
-import com.smckinlay.config.AppConfig;
-import com.smckinlay.Game;
-import com.smckinlay.MessageGenerator;
-import com.smckinlay.NumberGenerator;
+import com.smckinlay.config.GameConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -21,26 +18,27 @@ public class Main {
         // create context (container)
 //        ConfigurableApplicationContext context = new ClassPathXmlApplicationContext(CONFIG_LOCATION);
 
-        ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+        ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(GameConfig.class);
+//        ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
         // get number generator bean from context (container)
-        NumberGenerator numberGenerator = context.getBean(NumberGenerator.class);
+//        NumberGenerator numberGenerator = context.getBean(NumberGenerator.class);
 
         // call method next() to get random number
-        int number = numberGenerator.next();
+//        int number = numberGenerator.next();
 
         // log generated number
-        log.info("number = {}", number);
+//        log.info("number = {}", number);
 
         // get game bean from context (container)
-        Game game = context.getBean(Game.class);
+//        Game game = context.getBean(Game.class);
 
         // reset
 //        game.reset();
 
-        MessageGenerator messageGenerator = context.getBean(MessageGenerator.class);
-        log.info("getMainMessage= {}", messageGenerator.getMainMessage());
-        log.info("getResultsMessage= {}", messageGenerator.getResultMessage());
+//        MessageGenerator messageGenerator = context.getBean(MessageGenerator.class);
+//        log.info("getMainMessage= {}", messageGenerator.getMainMessage());
+//        log.info("getResultsMessage= {}", messageGenerator.getResultMessage());
 
         // close context (container)
         context.close();

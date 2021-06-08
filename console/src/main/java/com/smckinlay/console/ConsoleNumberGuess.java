@@ -16,16 +16,19 @@ import java.util.Scanner;
 //public class ConsoleNumberGuess implements ApplicationListener<ContextRefreshedEvent> {
     public class ConsoleNumberGuess {
 
-
     // ==   constants   ==
     private static final Logger log = LoggerFactory.getLogger(ConsoleNumberGuess.class);
 
     // ==   fields  ==
-    @Autowired
-    private Game game;
+    private final Game game;
+    private final MessageGenerator messageGenerator;
 
+    // ==   constructors  ==
     @Autowired
-    private MessageGenerator messageGenerator;
+    public ConsoleNumberGuess(Game game, MessageGenerator messageGenerator) {
+        this.game = game;
+        this.messageGenerator = messageGenerator;
+    }
 
     // ==   events  ==
     @EventListener(ContextRefreshedEvent.class)

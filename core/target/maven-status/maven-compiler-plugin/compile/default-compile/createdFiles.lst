@@ -1,7 +1,11 @@
-com\smckinlay\GameImpl.class
-com\smckinlay\MessageGenerator.class
-com\smckinlay\AppConfig.class
-com\smckinlay\MessageGeneratorImpl.class
-com\smckinlay\Game.class
-com\smckinlay\NumberGenerator.class
+com\smckinlay\config\AppConfig.class
+com\smckinlay\GuessCount.class
 com\smckinlay\NumberGeneratorImpl.class
+com\smckinlay\GameImpl.class
+com\smckinlay\MaxNumber.class
+com\smckinlay\MessageGenerator.class
+com\smckinlay\MessageGeneratorImpl.class
+com\smckinlay\MinNumber.class
+com\smckinlay\Game.class
+com\smckinlay\config\GameConfig.class
+com\smckinlay\NumberGenerator.class

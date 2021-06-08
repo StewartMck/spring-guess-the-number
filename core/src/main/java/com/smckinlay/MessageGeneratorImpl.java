@@ -3,17 +3,24 @@ package com.smckinlay;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 
+@Component
 public class MessageGeneratorImpl implements MessageGenerator {
 
     // == constants ==
     private static final Logger logger = LoggerFactory.getLogger(MessageGeneratorImpl.class);
 
     // == fields ==
+    private final Game game;
+
+    // == constructors ==
     @Autowired
-    private Game game;
+    public MessageGeneratorImpl(Game game) {
+        this.game = game;
+    }
 
     // == init ==
     @PostConstruct
@@ -22,7 +29,6 @@ public class MessageGeneratorImpl implements MessageGenerator {
     }
 
     // == public methods ==
-
     @Override
     public String getMainMessage() {
         return "Number is between " +
@@ -46,7 +52,7 @@ public class MessageGeneratorImpl implements MessageGenerator {
             if(game.getGuess() < game.getNumber()) {
                 direction = "higher";
                 return direction + "! You have " + game.getRemainingGuesses() + (game.getRemainingGuesses() > 1 ? " guesses" : " guess")  + " left.";
-            } else if(game.getGuessCount() > game.getNumber()) {
+            } else if(game.getGuess() > game.getNumber()) {
                 return direction + "! You have " + game.getRemainingGuesses() + (game.getRemainingGuesses() > 1 ? " guesses" : " guess")  + " left.";
             }
         }

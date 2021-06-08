@@ -9,23 +9,23 @@ import org.springframework.context.annotation.Import;
 @Configuration
 @Import(GameConfig.class)
 @ComponentScan(basePackages = "com.smckinlay")
-public class AppConfig {
+public class AppConfig_deleted {
 
     // ==   bean methods    ==
-    @Bean
-    public NumberGenerator numberGenerator(){
-        return new NumberGeneratorImpl();
-    }
+//    @Bean
+//    public NumberGenerator numberGenerator(){
+//        return new NumberGeneratorImpl();
+//    }
 
-    @Bean
-    public Game game(){
-        return new GameImpl();
-    }
+//    @Bean
+//    public Game game(){
+//        return new GameImpl();
+//    }
 
-    @Bean
-    public MessageGenerator messageGenerator(){
-        return new MessageGeneratorImpl();
-    }
+//    @Bean
+//    public MessageGenerator messageGenerator(){
+//        return new MessageGeneratorImpl();
+//    }
 
 
 }
