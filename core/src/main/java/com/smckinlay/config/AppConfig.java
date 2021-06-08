@@ -1,10 +1,13 @@
-package com.smckinlay;
+package com.smckinlay.config;
 
+import com.smckinlay.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 
 @Configuration
+@Import(GameConfig.class)
 @ComponentScan(basePackages = "com.smckinlay")
 public class AppConfig {
 

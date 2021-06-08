@@ -1,6 +1,6 @@
 package com.smckinlay.console;
 
-import com.smckinlay.AppConfig;
+import com.smckinlay.config.AppConfig;
 import com.smckinlay.Game;
 import com.smckinlay.MessageGenerator;
 import com.smckinlay.NumberGenerator;
