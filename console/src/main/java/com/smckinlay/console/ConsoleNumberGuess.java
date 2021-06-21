@@ -36,7 +36,7 @@ import java.util.Scanner;
     @EventListener(ContextRefreshedEvent.class)
 //    public void start(ContextRefreshedEvent contextRefreshedEvent) {
     public void start() {
-        log.info("start() --> Container ready for use.");
+//        log.info("start() --> Container ready for use.");
 
         Scanner scanner = new Scanner(System.in);
         while(true) {
