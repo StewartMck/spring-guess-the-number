@@ -1,5 +1,7 @@
-package com.smckinlay;
+package com.smckinlay.service;
 
+import com.smckinlay.Game;
+import com.smckinlay.MessageGenerator;
 import com.smckinlay.service.GameService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
