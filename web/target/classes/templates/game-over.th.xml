@@ -1,0 +1,9 @@
+<thlogic xmlns:th="http://www.thymeleaf.org">
+    <attr sel="head"  th:replace="~{fragments/head::headFragment}"/>
+    <attr sel="h1" th:text="#{game.title}"/>
+    <attr sel="h2" th:text="#{game.over}"/>
+    <attr sel="#result-message" th:text="${resultMessage}"/>
+    <attr sel="#restart" th:text="#{navigate.again}"/>
+    <attr sel="#home" th:text="#{navigate.home}"/>
+    <attr sel="footer" th:replace="~{fragments/footer::footerFragment}"/>
+</thlogic>

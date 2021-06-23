@@ -1,0 +1,4 @@
+<thlogic xmlns:th="http://www.thymeleaf.org">
+    <attr sel="footer" th:fragment="footerFragment"/>
+    <attr sel="p" th:text="|#{game.footer} Stewart|"/>
+</thlogic>

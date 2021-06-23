@@ -1,0 +1,4 @@
+<thlogic xmlns:th="http://www.thymeleaf.org">
+    <attr sel="head" th:fragment="headFragment"/>
+    <attr sel="title" th:text="#{app.title}"/>
+</thlogic>

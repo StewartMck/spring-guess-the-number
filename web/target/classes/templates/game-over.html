@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head th:replace="~{fragments/head::headFragment}"/>
+<html lang="en">
+<head/>
 <body>
   <div align="center">
-    <h1>Guess The Number Game</h1>
+    <h1>Title</h1>
     <h2>Game Over</h2>
-    <h3 th:text="${resultMessage}">Game Result Message</h3>
+    <h3 id="result-message">Game Result Message</h3>
     <h3>
-      <a href="restart">Play Again</a>
+      <a id="restart" href="restart">Play Again</a>
     </h3>
     <h3>
-      <a href="/">Home</a>
+      <a id="home" href="/">Home</a>
     </h3>
-    <footer th:replace="~{fragments/footer::footerFragment}"/>
-
+    <footer/>
   </div>
 </body>
 </html>

@@ -1,3 +1,9 @@
+com\smckinlay\controller\GameController.class
+com\smckinlay\service\GameService.class
+com\smckinlay\util\GameMappings.class
 com\smckinlay\util\ViewNames.class
+com\smckinlay\util\thymeleaf\DecoupledLogicSetup.class
 com\smckinlay\WebMain.class
+com\smckinlay\util\AttributeNames.class
+com\smckinlay\service\GameServiceImpl.class
 com\smckinlay\config\WebConfig.class
