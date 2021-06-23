@@ -10,7 +10,7 @@
         <h3 th:text="${mainMessage}">Main Message Content</h3>
         <h3 th:text="${resultMessage}">Result Message Content</h3>
 
-        <form action="play" method="post">
+        <form th:action="play" method="post">
             <label for="guess">Enter Your Guess</label>
             <input id="guess" type="number" name="guess"/>
             <input type="submit" value="Submit"/>

@@ -37,6 +37,13 @@ public class GameController {
         return ViewNames.PLAY;
     }
 
+    @GetMapping(GameMappings.RESTART)
+    public String restart() {
+        gameService.reset();
+        return GameMappings.REDIRECT_PLAY;
+    }
+
+
     @PostMapping(GameMappings.PLAY)
     public String processMessage(@RequestParam int guess){
         // guess param matches to name in form
